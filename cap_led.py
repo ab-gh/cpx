@@ -42,7 +42,7 @@ while True:
             elif a1==0:             # bounce
                 a1step=1            # flip
                 a1=a1+a1step        # catch
-        print(a1)
+        print("r: ", a1)
     if touch2.value:
         if a2step==1:               # rising
             if a2<128:              # rising
@@ -56,6 +56,7 @@ while True:
             elif a2==0:             # bounce
                 a2step=1            # flip
                 a2=a2+a2step        # catch
+        print("g: ", a2)
     if touch3.value:
         if a3step==1:               # rising
             if a3<128:              # rising
@@ -69,6 +70,7 @@ while True:
             elif a3==0:             # bounce
                 a3step=1            # flip
                 a3=a3+a3step        # catch
+        print("b: ", a3)
     a1, a2, a3 = int(a1), int(a2), int(a3)
     pixels.fill((a1,a2,a3))
     pixels.show()
